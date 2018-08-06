@@ -174,7 +174,7 @@
 			children = (
 				D4086B6B2114D74A000D87FA /* Helper */,
 				D4086B6A2114D716000D87FA /* Modal */,
-				D49E5F472111C1CA005D8562 /* Controller */,
+				D49E5F472111C1CA005D8562 /* Api */,
 				D49E5F442111BD4F005D8562 /* Model */,
 				D49E5F162111A19C005D8562 /* AppDelegate.swift */,
 				D49E5F182111A19C005D8562 /* ViewController.swift */,
@@ -182,7 +182,6 @@
 				D49E5F1D2111A19F005D8562 /* Assets.xcassets */,
 				D49E5F1F2111A19F005D8562 /* LaunchScreen.storyboard */,
 				D49E5F222111A19F005D8562 /* Info.plist */,
-				D49E5F5621133172005D8562 /* DataHandler.swift */,
 			);
 			path = myMusicLocator;
 			sourceTree = "<group>";
@@ -200,11 +199,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D49E5F472111C1CA005D8562 /* Controller */ = {
+		D49E5F472111C1CA005D8562 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				D49E5F5621133172005D8562 /* DataHandler.swift */,
 			);
-			path = Controller;
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

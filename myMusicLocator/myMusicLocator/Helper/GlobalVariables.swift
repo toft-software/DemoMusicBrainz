@@ -18,4 +18,6 @@ class GlobalVariables {
     static var SecondaryGreen : UIColor  = UIColor(displayP3Red: 88, green: 185, blue: 71, alpha: 1.0)
 
     static var DarkGreen : UIColor  = UIColor(displayP3Red: 32, green: 91, blue: 45, alpha: 1.0)
+    
+    static var Limit : String =  "100"
 }

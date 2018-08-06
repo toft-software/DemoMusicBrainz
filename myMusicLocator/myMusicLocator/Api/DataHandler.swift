@@ -12,7 +12,7 @@ import Foundation
 @objc class DataHandler: NSObject {
     
     static let queryTAG = "#query#"
-    static let jsonUrlBaseString = "https://musicbrainz.org/ws/2/place/?query=?" + DataHandler.queryTAG +  "&limit=100&fmt=json"
+    static let jsonUrlBaseString = "https://musicbrainz.org/ws/2/place/?query=?" + DataHandler.queryTAG +  "&limit=" + GlobalVariables.Limit + "&fmt=json"
     
     class func DoSearch(searchObj : SearchObject, completionBlock: @escaping (RootClass) -> Void) {
         let jsonUrlString = jsonUrlBaseString.replacingOccurrences(of: DataHandler.queryTAG, with: searchObj.SearchString)         
