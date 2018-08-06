@@ -95,6 +95,7 @@ class Modal
         closeModal.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
         closeModal.sizeToFit ()
         closeModal.frame = CGRect(x :10, y:0, width : closeModal.frame.width, height: 40);
+
         closeModal.addTarget(self, action: #selector(actionCancel(sender:)), for: .touchUpInside)
         
         
@@ -106,11 +107,11 @@ class Modal
         doneModal.titleLabel?.font = UIFont(name : "HelveticaNeue-Light", size :16)
         doneModal.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
         doneModal.sizeToFit()
-        doneModal.frame = CGRect(x : modalView.frame.width - doneModal.frame.width - 10, y: 0, width: doneModal.frame.width, height :40)
+        doneModal.frame = CGRect(x : modalView.frame.width - doneModal.frame.width - 10, y: 0, width: 40, height :40)
     
         // A horizontal line to separate the buttons from the custom view.
         let line  = UIView ()
-        line.backgroundColor = UIColor(displayP3Red: 244, green: 245, blue: 245, alpha: 1.0)
+        line.backgroundColor = UIColor.darkGray
         line.frame = CGRect(x :10, y :closeModal.frame.maxY, width : modalView.frame.width-20, height:  1)
     
         customView.frame = CGRect(x :0, y: line.frame.maxY+2, width :modalView.frame.width, height : modalView.frame.height-line.frame.maxY-5)
@@ -139,7 +140,6 @@ class Modal
         viewController.title = ""
 
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-            viewController.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1.0)
             self.navView.alpha = 1
             self.headerTitle.alpha = 1
             self.blurBGView.alpha = 1

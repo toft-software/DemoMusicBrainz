@@ -12,6 +12,7 @@
 		6AF596178247188088307681 /* Pods_myMusicLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAC2DD3CD4090E45EAEED2C /* Pods_myMusicLocator.framework */; };
 		D4086B692114675A000D87FA /* ModalOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4086B682114675A000D87FA /* ModalOption.swift */; };
 		D44DF086211825BA00DFE994 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF085211825BA00DFE994 /* GlobalVariables.swift */; };
+		D44DF088211882F600DFE994 /* StyleKitMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF087211882F500DFE994 /* StyleKitMusic.swift */; };
 		D49E5F172111A19C005D8562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E5F162111A19C005D8562 /* AppDelegate.swift */; };
 		D49E5F192111A19C005D8562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E5F182111A19C005D8562 /* ViewController.swift */; };
 		D49E5F1C2111A19C005D8562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49E5F1A2111A19C005D8562 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		C01F55B7966B617507298865 /* Pods-myMusicLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myMusicLocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-myMusicLocatorUITests/Pods-myMusicLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4086B682114675A000D87FA /* ModalOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOption.swift; sourceTree = "<group>"; };
 		D44DF085211825BA00DFE994 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		D44DF087211882F500DFE994 /* StyleKitMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKitMusic.swift; sourceTree = "<group>"; };
 		D49E5F132111A19C005D8562 /* myMusicLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMusicLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49E5F162111A19C005D8562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D49E5F182111A19C005D8562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		D4086B6B2114D74A000D87FA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D44DF087211882F500DFE994 /* StyleKitMusic.swift */,
 				D49E5F5A21142507005D8562 /* SearchHelper.swift */,
 				D44DF085211825BA00DFE994 /* GlobalVariables.swift */,
 			);
@@ -414,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44DF088211882F600DFE994 /* StyleKitMusic.swift in Sources */,
 				D49E5F5D21142FF1005D8562 /* Modal.swift in Sources */,
 				D49E5F192111A19C005D8562 /* ViewController.swift in Sources */,
 				D49E5F5421132847005D8562 /* LifeSpan.swift in Sources */,
@@ -606,7 +610,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.toft-software..myMusicLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.toft-software.myMusicLocator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.toft-software..myMusicLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.toft-software.myMusicLocator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,11 +6,13 @@
 //  Copyright © 2018 Christian Andersen. All rights reserved.
 //
 
+
 import Foundation
 import UIKit
 
 class GlobalVariables {
     
+    //  Der er bug i de farver koder - når ikke at rette det til - Christian Andersen
     static var PrimaryGreen : UIColor  = UIColor(displayP3Red: 182, green: 204, blue: 59, alpha: 1.0)
 
     static var SecondaryGreen : UIColor  = UIColor(displayP3Red: 88, green: 185, blue: 71, alpha: 1.0)

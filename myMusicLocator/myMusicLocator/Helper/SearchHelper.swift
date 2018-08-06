@@ -17,7 +17,7 @@ public enum PlaceType: String
     case studio
     case venue
     case other
-    //NB der er flere typer 
+    //NB der er flere typer som ikke er taget med
 }
 
 class SearchObject: NSObject {
@@ -56,7 +56,7 @@ class SearchObject: NSObject {
             self.addPlaceType(placeType)
         }
     }
-   // +AND+(type:venue+OR+type:other)&limit=100&fmt=json"
+
     var SearchString: String {
         get {
             var searchType = ""

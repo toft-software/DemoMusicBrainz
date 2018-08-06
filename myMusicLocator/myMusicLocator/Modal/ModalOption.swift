@@ -39,16 +39,6 @@ class ModalSearch
     
         modal.doneModal.addTarget(self, action: #selector(actionSearch(sender:)), for: .touchUpInside)
         
-        let widthWithPadding = searchView.frame.width - paddingSide * 2
-        var viewWidth = searchView.frame.width
-        
-        nameLabel = UILabel();
-        nameLabel.frame = CGRect(x: paddingSide, y: paddingTop, width : widthWithPadding, height: 0);
-        nameLabel.font = UIFont(name :"HelveticaNeue-Light", size : 17)
-        nameLabel.text = "Comment:";
-        nameLabel.sizeToFit();
-        nameLabel.textColor = UIColor.darkGray
-        
         optionPerforming = UISwitch()
         optionPerforming.frame = CGRect(x: searchView.frame.width - 44 - 10, y: paddingTop, width : 44, height :44)
         optionPerforming.isOn = searchObj.placeTypeExists(PlaceType.venue.rawValue) || searchObj.placeTypeExists(PlaceType.other.rawValue) 
@@ -96,7 +86,7 @@ class ModalSearch
 
     }
     
-    //skal refactoreres
+    //kan godt refactoreres
     @objc func switchProducingDidChange(_ sender: UISwitch) {
         searchObj.addPlaceType(placeType:PlaceType.studio.rawValue)
     }
